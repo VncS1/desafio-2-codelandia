@@ -1,0 +1,185 @@
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+}
+
+.discount {
+    width: 100%;
+    
+    
+    background: var(--title);
+
+    color: var(--white);
+
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+
+    text-align: center;
+}
+
+.page-title {
+    width: 100%;
+
+    background: #f9f9f9;
+
+    font-family: 'Monteserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 45px;
+    text-align: center;
+}
+
+.banner {
+    padding: 155px 2rem 135px 10rem;
+
+    background: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner-texts {
+    color: #fff;
+    font-family: 'Monteserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 150px;
+    
+}
+
+.banner-texts .banner-title {
+    font-weight: 700;
+    font-size: 1.75em;
+    margin-bottom: 25px;
+}
+
+.banner-text {
+    line-height: 30px;
+    font-size: 1.05em;
+
+    max-width: 380px;
+    
+}
+
+@media (max-width: 767px) {
+    .banner {
+        background: url('../img/banner2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        padding: 135px 4rem 110px 3rem;
+    }
+
+    .banner-text {
+        width: 92%;
+    }
+}
+
+/* Cards */
+
+main {
+    background-color: var(--bgSite);
+    padding: 10rem 7rem;
+}
+
+.text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Monteserrat', sans-serif;
+}
+
+.text-top .destaque-title {
+    font-size: 1.75em;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.text-top .destaque-subtitle {
+    font-size: 1.05em;
+    font-weight: 500;
+    margin-bottom: 6rem;
+
+    color: var(--text);
+}
+
+.sneakers {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content:space-between;
+    
+
+    width: 100%;
+    height: auto;
+}
+
+.sneakers .sneakers-box {
+    flex: 1 1 311px;
+    margin: 2rem .5rem;
+    padding: 75px 35px;
+
+    background-color: var(--bgCard);
+    
+}
+
+.sneakers .sneakers-box {
+    width: 25%;
+}
+
+
+
+@media (max-width: 660px){
+    main {
+        padding: 6rem 2rem;
+    }
+
+    .text-top .destaque-title {
+        font-size: 2em;
+    }
+
+    .text-top .destaque-subtitle {
+        font-size: 1.25em;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .sneakers .sneakers-box {
+        width: 100%;
+        padding: 50px 25px;
+    }
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: var(--title);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.05em;
+    padding: 1.5rem;
+
+    color: #fff;
+
+}

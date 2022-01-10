@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="./styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+
+    <title>Desafio 2 - Jordan Shoes</title>
+</head>
+<body>
+    <div class="discount">
+        <p>Ganhe R$ 10,00 de desconto no frete.</p>
+    </div>
+    <div class="page-title">
+        <p>JordanShoes</p>
+    </div>
+    <div class="banner">
+        
+        <div class="banner-texts">
+            <h1 class="banner-title">A Melhor loja de Jordan</h1>
+
+            <p id="typed" class="banner-text"></p>
+
+            <div id="typed-strings">
+                <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o Jogador Michael Jordan.</p>
+            </div>  
+        </div>
+
+        <div class="mask"></div>
+
+        <!-- <img src="./img/banner.png" alt="Banner" /> -->
+
+    </div>
+
+    <main>
+        <div class="text-top">
+            <p class="destaque-title">Destaques</p>
+            <p class="destaque-subtitle">Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+        </div>
+
+        <div class="sneakers">
+            <div class="sneakers-box">
+                <img src="./img/1.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/2.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/3.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/4.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/5.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/6.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/7.png" alt="Tenis Jordan" />
+            </div>
+            <div class="sneakers-box">
+                <img src="./img/8.png" alt="Tenis Jordan" />
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+<script>
+    var typed= new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 30
+    });
+
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance:'60px',
+        duration: 2000,
+        reset: false
+    });
+
+    ScrollReveal().reveal('.destaque-subtitle', { delay: 100 });
+    ScrollReveal().reveal('.destaque-title', { delay: 100 });
+    ScrollReveal().reveal('.sneakers-box', { delay: 250 });
+
+    ScrollReveal().reveal('.banner-title', { delay: 300 });
+</script>
+</html>
